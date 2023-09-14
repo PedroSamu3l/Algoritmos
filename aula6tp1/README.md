@@ -96,3 +96,27 @@ int main()
     printf("O total de bombons q ele consegue comprar e %.2f" , VF);
     return 0;
 }
+DESAFIO
+ #include <stdio.h>
+
+int main()
+{
+    float CF, A = 365, AF;
+   	float  DV, calc, V;
+   	
+   	 
+   	
+   	printf("quantos cigarros fumados por dia ?");
+    scanf("%f" , &CF);
+ 	printf("quantos anos vc ja fumou ?");
+    scanf("%f" , &AF);
+ 
+ calc = (CF * A);
+ DV = (calc * AF);
+ V = ((CF * AF / 1440) * 10) * DV;
+ 
+ 
+    
+    printf("O total de dias de vida ele perdera sao %.2f" , V);
+    return 0;
+}
