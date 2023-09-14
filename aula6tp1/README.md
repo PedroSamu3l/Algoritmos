@@ -4,6 +4,7 @@ Exercicios da aula 6 de C (tp1)
 int main()
 {
     char n [100];
+
     printf("qual seu nome?");
     scanf("%s" , n);
 
@@ -50,6 +51,7 @@ _________________________________________________________________________
 int main()
 {
    	 float P, PF;
+     
    	 printf("qual o valor do produto ?");
     	scanf("%f" , &P);
     PF = P - (P * 0.05);
@@ -85,6 +87,7 @@ int main()
 {
     int D, B, VB = 1;
    	float  VF;  	 
+    
    	printf("quantos dinheiros vc tem?");
     scanf("%d" , &D);
  	printf("quantidade de Bombons ");
