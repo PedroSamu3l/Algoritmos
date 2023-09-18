@@ -1,5 +1,4 @@
 Exercicios da aula 6 de C (tp1)
- 
 1) #include <stdio.h>
 int main()
 {
