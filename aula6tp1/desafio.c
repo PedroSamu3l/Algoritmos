@@ -2,22 +2,16 @@
 
 int main()
 {
-    float CF, A = 365, AF;
-   	float  DV, calc, V;
+    float CF, A = 365, AF, V;
    	
-   	 
-   	
-   	printf("quantos cigarros fumados por dia ?");
+   	printf("quantos cigarros voce fuma por dia ?");
     scanf("%f" , &CF);
  	printf("quantos anos vc ja fumou ?");
     scanf("%f" , &AF);
- 
 
- V = (CF * 10) * ((AF * 365) / 1440);
+    V = (CF * 10) * ((AF * A) / 1440);
  
- 
-    
-    printf("O total de dias de vida ele perdeu foi %.f" , V);
+    printf("Voce perdeu %.f dias de vida " , V);
     return 0;
 }
 
