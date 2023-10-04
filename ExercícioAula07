@@ -1,1 +1,271 @@
 Lista de Exercícios da Aula 07
+1)#include <stdio.h>
+
+  int main()
+{
+    int l, r;
+    ///Entrada: lado do cubo
+    printf("qual o valor do lado do cubo ? ");
+    scanf("%d" , &l);
+    
+    r = l * l * l;
+
+    ///Saida: volume do cubo
+    printf("o volume do cubo e de %d" , r);
+    return 0;
+}
+_________________________________________________________________________
+2)#include <stdio.h>
+
+int main()
+{
+    float b, h, r;
+    ///Entrada: base e altura do triangulo
+    printf("qual o valor da base e da altura do triangulo ? ");
+    scanf("%f %f" , &b, &h);
+    
+    r = b * h / 2;
+
+    ///Saida: area do triangulo 
+    printf("A area do triangulo e %.1f" , r);
+    return 0;
+}
+_________________________________________________________________________
+3)#include <stdio.h>
+
+int main()
+{   
+    float p, a, r;
+    /// Entrada: float altura (Metros) e peso (KG)
+    printf("qual a altura (Metros) e o peso (KG) ? ");
+    scanf("%f %f" , &a, &p);
+    
+    r = p / (a * a);
+    
+    ///Saída: float IMC da pessoa
+    printf("O IMC dessa pessoa e %.2f" , r);
+    return 0;
+}
+_________________________________________________________________________
+4)#include <stdio.h>
+
+int main()
+{
+    float p, d, r;
+    ///Entrada:valor do produto e valor do desconto
+    printf("qual o valor do produto ? ");
+    scanf("%f" , &p);
+    
+    printf("qual o valor percentual do desconto ? ");
+    scanf("%f" , &d);
+    
+    r = p - (d / 100);
+    ///Saida:Valor final após o calculo do desconto 
+    printf("O valor final e %.2f" , r);
+    return 0;
+}
+_________________________________________________________________________
+5)#include <stdio.h>
+
+int main()
+{
+    float b, v, r;
+    ///Entrada:valor da quantidade de bytes
+    printf("qual a quantidade de bytes ? ");
+    scanf("%f" , &b);
+    
+    printf("qual a velocidade de transmissão em bytes por segundo ? ");
+    scanf("%f" , &v);
+    
+    r = b / v;
+    ///Saida:tempo para o download do arquivo
+    printf("serão necessários %.2f segundos para fazer o download do arquivo" , r);
+    return 0;
+}
+_________________________________________________________________________
+6)#include <stdio.h>
+
+int main()
+{
+    float c, f;
+    ///Entrada:valor da temperatura em graus Celsius
+    printf("qual a temperatura em graus Celsius ? ");
+    scanf("%f" , &c);
+    
+   f = 32 + ((float) 212 - 32) / 100 * c;
+    
+    ///Saida:valor da temperatura em graus Fahrenheit
+    printf("A temperatura em graus Fahrenheit e %.2f " , f);
+    return 0;
+}
+_________________________________________________________________________
+7)#include <stdio.h>
+
+int main()
+{
+    float v, r;
+    ///Entrada:valor do raio de uma esfera
+    printf("qual o valor do raio da esfera ? ");
+    scanf("%f" , &r);
+    
+   v = ((float)4 / 3) * 3.14 * r *r *r;
+    
+    ///Saida:valor do volume da esfera
+    printf("O valor do volume da esfera e %.2f " , v);
+    return 0;
+}
+_________________________________________________________________________
+8)#include <stdio.h>
+
+int main()
+{
+    float km, m;
+    ///Entrada:valor em km
+    printf("qual o valor em km ? ");
+    scanf("%f" , &km);
+    
+   m = km * 0.621371;
+    
+    ///Saida:valor em milhas 
+    printf("O valor em milhas e %.6f " , m);
+    return 0;
+}
+_________________________________________________________________________
+9)#include <stdio.h>
+
+int main()
+{
+    float r, h, v;
+    ///Entrada:valor do raio e da altura
+    printf("qual o valor do raio do cilindro ? ");
+    scanf("%f" , &r);
+    
+    printf("qual o valor da altura do cilindro ? ");
+    scanf("%f" , &h);
+    
+   v = 3.14 * (r * r) * h;
+    
+    ///Saida:valor do volume do cilindro
+    printf("O volume do cilindro e %.2f " , v);
+    return 0;
+}
+_________________________________________________________________________
+10)#include <stdio.h>
+
+int main()
+{
+    float n1, n2, n3, p1, p2, p3, m;
+    
+    ///Entrada:valores das nota do aluno
+    printf("insira o valor da nota 1 e o peso ");
+    scanf("%f %f" , &n1, &p1);
+    
+    printf("insira o valor da nota 2 e o peso ");
+    scanf("%f %f" , &n2, &p2);
+    
+    printf("insira o valor da nota 3 e o peso ");
+    scanf("%f %f" , &n3, &p3);
+    
+    m = ((n1 * p1) + (n2 * p2) + (n3 * p3)) / 3;
+    
+    ///Saida:media ponderada do aluno
+    printf("A media ponderada do aluno e %.2f " , m);
+    
+    return 0;
+}
+_________________________________________________________________________
+11)#include <stdio.h>
+
+int main()
+{
+    float c, l, g, a, v;
+    
+    ///Entrada:valores do comprimento e largura do terreno
+    printf("insira o comprimento do terreno ");
+    scanf("%f" , &c);
+    
+    printf("insira a largura do terreno ");
+    scanf("%f" , &l);
+    
+    printf("insira o custo do metro quadrado da grama ");
+    scanf("%f" , &g);
+    
+    a = c * l;
+    v = g * a;
+    ///Saida:Area do terreno e valor a ser gasto com a grama
+    printf("A area do terreno e %.0fm2 " , a);
+    printf("\n O valor a ser gasto com a grama e %.2fR$" , v);
+    
+    return 0;
+}
+_________________________________________________________________________
+12)#include <stdio.h>
+
+int main()
+{
+    float c, l, valorarame, m, valortotal, calcterreno;
+    ///entrada: comprimento e a largura de um terreno retangular e o valor do arame
+    printf("insira o comprimento do terreno: ");
+    scanf("%f" , &c);
+    printf("insira a largura do terreno: ");
+    scanf("%f" , &l);
+    printf("insira o vaor do arame farpado: ");
+    scanf("%f" , &valorarame);
+    
+    m = c * l;
+    calcterreno = m * 4;
+    valortotal = m * valorarame * 4;
+    
+    ///Saida:tamanho do terreno e valor a ser gasto com o arame
+    printf("Serao gastos %.2fm de arame farpado para cercar o terreno " , calcterreno);
+    printf("\n O valor a ser gasto com arame sera de  %.2fR$" , valortotal);
+    
+    return 0;
+}
+_________________________________________________________________________
+13)#include <stdio.h>
+
+int main()
+{
+    float a, n, r, an;
+    ///entrada: 
+    printf("insira o primeiro termo de a: ");
+    scanf("%f" , &a);
+    printf("insira o valor de n: ");
+    scanf("%f" , &n);
+    printf("insira o valor de r: ");
+    scanf("%f" , &r);
+    
+    an = a + (n - 1) * r;
+    
+    ///Saida:
+    printf("o n-esimo termo e %.0f " , an);
+    
+    return 0;
+}
+_________________________________________________________________________
+14)#include <stdio.h>
+
+int main()
+{
+    float a, b, x;
+    ///entrada: 
+    printf("insira o valor de a: ");
+    scanf("%f" , &a);
+    printf("insira o valor de b: ");
+    scanf("%f" , &b);
+    
+    if (a > 0) 
+    {
+        x = b / a;
+        printf("o valor de x e %.f " , x);
+    }
+    
+    if (a <= 0) 
+    {
+        puts("ERRO: a nao pode ser igual a zero");
+    }
+    
+    return 0;
+}
+_________________________________________________________________________
